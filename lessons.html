@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons | Title</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="rule.css">
+    <link rel="stylesheet" href="lesson.css">
+</head>
+
+<body>
+
+            <!-- Start of Navbar -->
+    <div class="container custom-navbar-con">
+        <nav class="navbar navbar-expand-md custom-navbar shadow">
+            <a href="#" class="navbar-brand ms-5 ms-md-2"><img src="./home-images/Future leaf.svg" alt="logo"
+                    width="50px" height="50px"></a>
+            <a href="" class="navbar-brand"><span class="navbar-text text-dark">Future Leaf</span></a>
+            <!-- Toggler button -->
+            <button class="navbar-toggler me-5" data-bs-toggle="collapse" type="button" data-bs-target="#nav_id"><span
+                    class="navbar-toggler-icon"></span></button>
+            <!-- Nav items container -->
+            <div class="collapse navbar-collapse ms-5 ms-md-0" id="nav_id">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learn</a>
+                        <ul class="dropdown-menu custom-dropdown-menu mb-3 mt-3">
+                            <li><a href="#" class="dropdown-item ">Lesson</a></li>
+                            <li><a href="#" class="dropdown-item ">Eco Tips & Tricks</a></li>
+                            <li><a href="#" class="dropdown-item ">DIY</a></li>
+                            <li><a href="#" class="dropdown-item ">Games</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                        <ul class="dropdown-menu custom-dropdown-menu mb-3 mt-3">
+                            <li><a href="#" class="dropdown-item ">Sustainable Products</a></li>
+                            <li><a href="#" class="dropdown-item">Blog & Community</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu custom-dropdown-menu mb-3 mt-3">
+                            <li><a href="#" class="dropdown-item ">About Us</a></li>
+                            <li><a href="#" class="dropdown-item ">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-3 ms-md-3">
+                    <li class="nav-item">
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#accountModal"
+                            id="joinBtn"><b>Join</b></button>
+                        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#userModal"
+                            id="accountBtn" class=""><b id="userNameNav"></b></button>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Toggle Button for Mobile -->
+    <button class="navbar-toggler d-lg-none my000btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Offcanvas Sidebar for Mobile -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+                 
+            <h5 class="offcanvas-title text-white"><i class="bi bi-book me-2"></i>Lessons</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <div class="sidebar">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="pill" href="#l1">
+                            <i class="bi bi-building"></i> Sustainable Architecture
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l2">
+                            <i class="bi bi-tree"></i> Sustainable Agriculture
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l3">
+                            <i class="bi bi-cpu"></i> Sustainable Technology
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l4">
+                            <i class="bi bi-lightning-charge"></i> Renewable Energy
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l5">
+                            <i class="bi bi-trash"></i> Waste Management
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l6">
+                            <i class="bi bi-bus-front"></i> Sustainable Transport
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l7">
+                            <i class="bi bi-fan"></i> Wind Turbine
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l8">
+                            <i class="bi bi-thermometer-high"></i> Global Warming
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l9">
+                            <i class="bi bi-cloud-haze"></i> Pollution
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l10">
+                            <i class="bi bi-cup"></i> Reusable Containers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l11">
+                            <i class="bi bi-shop"></i> Sustainable Fashion
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l12">
+                            <i class="bi bi-egg-fried"></i> Eco-Friendly Cooking
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l13">
+                            <i class="bi bi-droplet"></i> Water Conservation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l14">
+                            <i class="bi bi-car-front"></i> EV Cars
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#l15">
+                            <i class="bi bi-recycle"></i> Reducing Plastic
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="container content-con-con ">
+    <div class="d-flex m-110px ">
+<div class="d-flex ">
+        <!-- Sidebar for Desktop -->
+        <div class="sidebar d-none d-lg-flex flex-column">
+            <div class="sidebar-header">
+                <h4 class="text-white"><i class="bi bi-book me-2"></i>Lessons</h4>
+            </div>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#l1">
+                        <i class="bi bi-building"></i> Sustainable Architecture
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l2">
+                        <i class="bi bi-tree"></i> Sustainable Agriculture
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l3">
+                        <i class="bi bi-cpu"></i> Sustainable Technology
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l4">
+                        <i class="bi bi-lightning-charge"></i> Renewable Energy
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l5">
+                        <i class="bi bi-trash"></i> Waste Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l6">
+                        <i class="bi bi-bus-front"></i> Sustainable Transport
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l7">
+                        <i class="bi bi-fan"></i> Wind Turbine
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l8">
+                        <i class="bi bi-thermometer-high"></i> Global Warming
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l9">
+                        <i class="bi bi-cloud-haze"></i> Pollution
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l10">
+                        <i class="bi bi-cup"></i> Reusable Containers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l11">
+                        <i class="bi bi-shop"></i> Sustainable Fashion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l12">
+                        <i class="bi bi-egg-fried"></i> Eco-Friendly Cooking
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l13">
+                        <i class="bi bi-droplet"></i> Water Conservation
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l14">
+                        <i class="bi bi-car-front"></i> EV Cars
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#l15">
+                        <i class="bi bi-recycle"></i> Reducing Plastic
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Content Area -->
+        <div class="tab-content content-area">
+            <!-- Lesson 1 - Sustainable Architecture -->
+            <div class="tab-pane fade show active" id="l1">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="lesson-card" data-aos="fade-up">
+                                <h2 class="lesson-header" data-aos="zoom-in">
+                                    <i class="bi bi-building me-2"></i>Sustainable Architecture
+                                </h2>
+                                <p class="lead" data-aos="fade-up" data-aos-delay="50">Learn how to design eco-friendly buildings and cities that harmonize with the environment.</p>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                                    <h4><i class="bi bi-question-circle feature-icon"></i> What is Sustainable Architecture?</h4>
+                                    <p>Sustainable architecture is a way of designing and building homes, schools, offices, and other structures that care for the environment and support healthier living. It combines smart design, eco-friendly materials, and energy-saving technologies to reduce harm to nature and create buildings that are better for both people and the planet.</p>
+                                    <p>Instead of using a lot of energy, water, or non-renewable materials, sustainable architecture focuses on preserving resources, reducing pollution, and promoting long-term comfort and safety. These buildings are made to work in harmony with the natural world—like using sunlight to light up rooms, collecting rainwater to water plants, and using special windows to keep rooms warm or cool.</p>
+                                    <p>It doesn't just help the environment. It also helps people live healthier lives and saves money in the long run by using less electricity and water.</p>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="150">
+                                    <h4><i class="bi bi-clock-history feature-icon"></i> The History and Growth of Sustainable Architecture</h4>
+                                    <p>Sustainable architecture may sound modern, but it has roots in ancient building practices. Long ago, civilizations like the Greeks, Romans, Egyptians, and Indigenous communities designed homes that used nature smartly—for example, thick walls to keep cool, or windows placed to let in the morning sun.</p>
+                                    <p>The modern movement began in the 20th century when architects and environmentalists became more aware of climate change, pollution, and the waste caused by construction. By the 1970s, people started using solar panels and green building materials. Today, sustainable architecture has become a global goal, supported by governments, scientists, and communities.</p>
+                                </div>
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="200">
+                                    <h4><i class="bi bi-list-check feature-icon"></i> Key Principles of Sustainable Architecture</h4>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="principle-card h-100">
+                                                <h5><i class="bi bi-lightning-charge text-success"></i> Energy Efficiency</h5>
+                                                <ul>
+                                                    <li>Use of solar panels, wind turbines, or geothermal systems</li>
+                                                    <li>Design that maximizes natural light and ventilation</li>
+                                                    <li>Insulation and energy-efficient windows</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="principle-card h-100">
+                                                <h5><i class="bi bi-bricks text-success"></i> Sustainable Materials</h5>
+                                                <ul>
+                                                    <li>Recycled, renewable, or locally-sourced materials</li>
+                                                    <li>Bamboo, reclaimed wood, recycled metal</li>
+                                                    <li>Low-VOC paints and finishes</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="principle-card h-100">
+                                                <h5><i class="bi bi-droplet text-success"></i> Water Conservation</h5>
+                                                <ul>
+                                                    <li>Rainwater harvesting systems</li>
+                                                    <li>Low-flow toilets and faucets</li>
+                                                    <li>Drought-resistant landscaping</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="principle-card h-100">
+                                                <h5><i class="bi bi-house text-success"></i> Indoor Quality</h5>
+                                                <ul>
+                                                    <li>Good ventilation and non-toxic materials</li>
+                                                    <li>Use of natural light for mood and productivity</li>
+                                                    <li>Sound insulation for comfort</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-star feature-icon"></i> Why Is Sustainable Architecture Important?</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-tree text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Environmental Protection</h5>
+                                                    <p>Reduces carbon footprint and pollution, preserves natural resources</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-cash-coin text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Economic Benefits</h5>
+                                                    <p>Lower energy and water bills over time, higher property values</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-heart-pulse text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Health Benefits</h5>
+                                                    <p>Improves air quality and living conditions, reduces toxins</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-graph-up text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Long-Term Value</h5>
+                                                    <p>Sustainable buildings last longer and retain value better</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                                    <h4><i class="bi bi-building-check feature-icon"></i> Examples of Sustainable Buildings</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <h5>The Edge, Amsterdam</h5>
+                                                <p>Highly energy-efficient office building with smart technology</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <h5>Bosco Verticale, Milan</h5>
+                                                <p>Towers with vertical forests for air purification</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <h5>Bullitt Center, Seattle</h5>
+                                                <p>Known as the "greenest commercial building in the world"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <hr class="my-5">
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                                    <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                                    <div class="video-container mt-3">
+                                       <iframe width="100%" height="500" src="https://www.youtube.com/embed/-dvFb2vC7_Y?si=XcUfsgghPUvoC1MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                              
+
+                                
+
+                                <iframe src="./quiz/Sustainable Architecture.html" frameborder="0" width="480px" height="360px" class="m-auto d-block rounded"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 2 - Sustainable Agriculture -->
+            <div class="tab-pane fade" id="l2">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="lesson-card">
+                                <h2 class="lesson-header">
+                                    <i class="bi bi-tree me-2"></i>Sustainable Agriculture
+                                </h2>
+                                <p class="lead" data-aos="fade-up" data-aos-delay="50">Discover how to grow food in ways that protect nature, support communities, and sustain the future.</p>
+
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                                    <h4><i class="bi bi-question-circle feature-icon"></i> What is Sustainable Agriculture?</h4>
+                                    <p>Sustainable agriculture is a method of farming that focuses on producing food in ways that protect the environment, improve soil health, and use natural resources wisely. Instead of relying heavily on chemical fertilizers, pesticides, or large amounts of water, sustainable agriculture uses techniques that work with nature, such as crop rotation, composting, and growing a variety of plants. These practices help preserve ecosystems and reduce pollution, making farming more eco-friendly.</p>
+                                    <p>This approach also supports the well-being of farmers, farm workers, and communities. It encourages fair treatment, safer working conditions, and access to local markets. Sustainable agriculture strengthens local food systems, reduces the need for long-distance transport, and helps communities become more self-reliant. It also aims to produce healthy food that’s affordable and accessible to everyone.</p>
+                                    <p>In simple terms, sustainable agriculture means growing food in a way that cares for people, the planet, and the future.</p>
+                                </div>
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="200">
+                                    <h4><i class="bi bi-list-check feature-icon"></i> Key Goals of Sustainable Agriculture</h4>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="principle-card h-100">
+                                                <h5><i class="bi bi-leaf text-success"></i> Protect the Environment</h5>
+                                                <ul>
+                                                    <li>Avoid polluting the air, water, or soil</li>
+                                                    <li>Reduce the use of harmful chemicals (like pesticides and synthetic fertilizers)</li>
+                                                    <li>Encourage biodiversity by growing different crops and supporting wildlife</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="principle-card h-100">
+                                                <h5><i class="bi bi-heart text-success"></i> Support Farmers and Communities</h5>
+                                                <ul>
+                                                    <li>Pay fair wages to farm workers</li>
+                                                    <li>Help local farmers thrive</li>
+                                                    <li>Build strong local food systems where food is grown and eaten nearby</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="principle-card h-100">
+                                                <h5><i class="bi bi-droplet text-success"></i> Use Resources Wisely</h5>
+                                                <ul>
+                                                    <li>Use water carefully, like through drip irrigation</li>
+                                                    <li>Practice crop rotation and composting to keep soil healthy</li>
+                                                    <li>Use renewable energy (like solar power) for farming tools and equipment</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-card-list feature-icon"></i> Examples of Sustainable Farming Practices</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-arrow-counterclockwise text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Crop Rotation</h5>
+                                                    <p>Reduces carbon footprint and pollution, preserves natural resources</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-tree text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Organic Farming</h5>
+                                                    <p>Using natural methods to grow food without synthetic chemicals</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-heart-pulse text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Agroforestry</h5>
+                                                    <p>Growing trees and crops together to provide shade, nutrients, and homes for animal</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-clock text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Composting</h5>
+                                                    <p>Recycling food scraps and plant waste into healthy soil fertilizer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-kanban text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Integrated Pest Management (IPM)</h5>
+                                                    <p>Using bugs, birds, and natural controls instead of harmful sprays</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                                    <h4><i class="bi bi-star feature-icon"></i> Why Is Sustainable Agriculture Important?</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <h5>Climate Change</h5>
+                                                <p>Farming methods can either harm or help the planet. Sustainable farming reduces greenhouse gases and pollution</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <h5>Food Security</h5>
+                                                <p>Helps ensure that everyone has enough healthy food, now and in the future</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <h5>Healthy Ecosystems</h5>
+                                                <p>Keeps rivers clean, forests growing, and animals safe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                                    <h4><i class="bi bi-heart-pulse feature-icon"></i> How Students and Families Can Help</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p>Grow a small garden at home or school</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p>Support local farmers' markets or community farms</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p>Learn about where your food comes from</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p>Waste less food and compost leftovers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-5">
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                                    <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                                    <div class="video-container mt-3">
+                                       <iframe width="100%" height="500" src="https://www.youtube.com/embed/9VlY-3V63yI?si=GgYc63-daS-4zslK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+
+         <iframe src="./quiz/Sustainable Agriculture.html" frameborder="0" width="480px" height="360px" class="m-auto d-block rounded"></iframe>
+                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lesson 3 - Sustainable Technology -->
+            <div class="tab-pane fade" id="l3">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="lesson-card">
+                                <h2 class="lesson-header">
+                                    <i class="bi bi-tree me-2"></i>Sustainable Technology
+                                </h2>
+                                <p class="lead" data-aos="fade-up" data-aos-delay="50">Explore how innovation can solve environmental challenges and build a smarter, greener future.</p>
+
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                                    <h4><i class="bi bi-question-circle feature-icon"></i> What is Sustainable Technology?</h4>
+                                    <p>Sustainable technology refers to innovations and tools that are designed to reduce negative impacts on the environment while supporting economic and social progress. These technologies are created with the future in mind — they aim to use resources wisely, avoid pollution, and help solve environmental problems like climate change, waste, and energy overuse. The goal is to create systems and products that work efficiently without harming the planet.</p>
+                                    <p>Examples of sustainable technology can be seen in everyday life and across many industries. For instance, solar panels provide clean energy from the sun, reducing the need for fossil fuels. Electric vehicles help lower air pollution in cities. Water-saving irrigation systems help farmers grow crops with less water. Even using biodegradable packaging or LED light bulbs at home is a form of sustainable technology. These tools are designed to last longer, waste less, and often save money in the long run.</p>
+                                    <p>In simple terms, sustainable technology means using science and innovation to help both people and the planet live better — now and in the future.</p>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-card-list feature-icon"></i> Key Principles of Sustainable Technology</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-arrow-counterclockwise text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Substitution</h5>
+                                                    <p>Replacing non-renewable resources with renewable ones</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-tree text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Prevention</h5>
+                                                    <p>Avoiding environmental degradation through careful design and usage</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-heart-pulse text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Efficiency</h5>
+                                                    <p>Maximizing energy and resource efficiency throughout a product's lifecycle</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-lightbulb feature-icon"></i> Examples of Sustainable Technology</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-arrow-counterclockwise text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Renewable Energy Systems:</b> Technologies like solar panels and wind turbines that generate clean energy.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-car-front text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Electric and Public Transportation:</b> Electric vehicles and efficient public transit systems reduce carbon emissions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-lightning-charge text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>LED Lighting:</b> Energy-efficient lighting solutions that consume less power.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-archive text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Carbon Capture and Storage:</b> Technologies that capture and store CO₂ emissions from industrial processes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-5">
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                                    <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                                    <div class="video-container mt-3">
+                                       <iframe width="100%" height="500" src="https://www.youtube.com/embed/X5MRrsoO1Wo?si=WgnT7BrYTWmSjQ0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                                       <iframe src="./quiz/Sustainable Technology.html" frameborder="0" width="480px" height="360px" class="m-auto d-block rounded"></iframe>
+                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 4 - Renewable Energy -->
+            <div class="tab-pane fade" id="l4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="lesson-card">
+                                <h2 class="lesson-header">
+                                    <i class="bi bi-tree me-2"></i>Renewable Energy
+                                </h2>
+                                <p class="lead" data-aos="fade-up" data-aos-delay="50">Learn how clean, renewable energy powers our world while protecting the planet.</p>
+
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                                    <h4><i class="bi bi-question-circle feature-icon"></i> What is Renewable Energy?</h4>
+                                    <p>Renewable energy refers to energy derived from natural sources that are replenished at a higher rate than they are consumed. These sources include sunlight, wind, water (hydropower), geothermal heat, and biomass. Unlike fossil fuels, which are limited and take millions of years to form, renewable resources are virtually inexhaustible and naturally replenished.</p>
+                                    <p>One of the biggest advantages of renewable energy is that it produces little to no greenhouse gas emissions, which are the primary cause of climate change. By transitioning to cleaner sources of energy, we can significantly reduce air pollution, slow global warming, and protect ecosystems. Renewable energy also contributes to improved public health by lowering exposure to harmful pollutants.</p>
+                                    <p>In addition, investing in renewable energy supports energy independence and economic growth. It creates jobs in manufacturing, installation, and maintenance of green technologies. Thanks to technological advancements, renewable energy is becoming more affordable and accessible, making it a practical solution for a sustainable future.</p>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-lightning-charge feature-icon"></i> Types of Renewable Energy</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-brightness-high text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Solar Energy:</b> Captures sunlight using photovoltaic cells to generate electricity or heat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-wind text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Wind Energy:</b> Utilizes wind turbines to convert wind's kinetic energy into electricity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-water text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Hydropower:</b> Generates electricity by harnessing the energy of flowing water, typically via dams</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-fire text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Geothermal Energy:</b> Exploits heat from the Earth's interior to produce electricity or provide direct heating.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-tree text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Biomass Energy:</b> Involves burning organic materials like wood, agricultural residues, or waste to produce heat or electricity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-globe-asia-australia feature-icon"></i> Benefits of Renewable Energy</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-arrow-counterclockwise text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                   <p><b>Environmental Protection:</b> Reduces greenhouse gas emissions and air pollutants</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-car-front text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Energy Security:</b> Diversifies energy supply and reduces dependence on imported fuels</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-lightning-charge text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Economic Growth:</b> Creates jobs in manufacturing, installation, and maintenance of renewable energy systems</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-archive text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Public Health:</b> Decreases air and water pollution, leading to improved health outcomes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-5">
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                                    <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                                    <div class="video-container mt-3">
+                                       <iframe width="100%" height="500" src="https://www.youtube.com/embed/1kUE0BZtTRc?si=X9XOOoJF1qFTC72R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+         <iframe src="./quiz/Renewable Energy.html" frameborder="0" width="480px" height="360px" class="m-auto d-block rounded"></iframe>
+                   
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 5 - Waste Management -->
+            <div class="tab-pane fade" id="l5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="lesson-card">
+                                <h2 class="lesson-header">
+                                    <i class="bi bi-tree me-2"></i>Waste Management
+                                </h2>
+                                <p class="lead" data-aos="fade-up" data-aos-delay="50">Discover how smart waste solutions keep our communities clean and our planet healthy.</p>
+
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                                    <h4><i class="bi bi-question-circle feature-icon"></i> What is Waste Management?</h4>
+                                    <p>Waste management is the process of collecting, transporting, processing, recycling, and disposing of waste materials in a way that reduces their harmful impact on people and the environment. It covers all types of waste, including household, industrial, agricultural, and hazardous waste.</p>
+                                    <p>Proper waste management helps protect public health and the environment by preventing pollution of air, water, and soil. It also includes the concept of the “3 Rs”: Reduce, Reuse, and Recycle. By minimizing the waste we generate and finding ways to reuse or repurpose items, we can conserve natural resources and decrease the strain on landfills.</p>
+                                    <p>Modern waste management systems use innovative technologies such as waste-to-energy conversion and smart sorting machines to improve efficiency. Education and awareness campaigns are also important, as they encourage individuals and communities to dispose of waste properly and take responsibility for their environmental impact.</p>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-key feature-icon"></i> Key Concepts in Waste Management</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-arrow-counterclockwise text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>1. Waste Management System:</b> A comprehensive approach encompassing the collection, transport, treatment, and disposal of waste, along with monitoring and regulation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-1-square text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>2. Waste Hierarchy:</b> A framework prioritizing waste management strategies in the following order: prevention, minimization, reuse, recycling, energy recovery, and disposal. This hierarchy aims to extract maximum benefits from products while minimizing waste</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-lightning-charge text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>3. Waste-to-Energy (WtE):</b> Processes that convert non-recyclable waste materials into usable forms of energy, such as electricity or heat. Common methods include direct combustion and other technologies that transform waste into fuel sources</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-cash-stack text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>4. Pay-As-You-Throw (PAYT):</b> A waste management model where users are charged based on the amount of waste they dispose of, incentivizing waste reduction and recycling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-arrow-up-square feature-icon"></i> Recent Developments in Waste Management</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-camera-reels text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>1. Smart Surveillance in Waste Management</h5>
+                                                    <p>In Gurgaon, India, the Gurugram Metropolitan Development Authority (GMDA) has installed 45 CCTV cameras at key garbage collection points and the Bandhwari landfill site. This initiative aims to monitor waste collection vehicles, prevent illegal dumping, and enhance the efficiency of waste management operations</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-bank text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>2. Investment in Renewable Energy</h5>
+                                                    <p>Waste Management Inc. (WM) is investing $3 billion between 2022 and 2026 to expand its renewable energy operations. This includes building 20 plants to capture natural gas from landfills, which will be used to fuel power generation and WM's natural-gas vehicle fleet</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-book feature-icon"></i> Additional Educational Resources</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-backpack2 text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>WM Education & Resources</h5>
+                                                    <p>Offers a variety of materials to learn about recycling, waste management processes, and sustainability practices</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-recycle text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>EPA's Reduce, Reuse, Recycle Resources</h5>
+                                                    <p>Provides educational materials and activities for students and educators to promote the 3Rs of waste management</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-people text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Zero Waste International Alliance</h5>
+                                                    <p>Offers educational materials aimed at advancing zero waste practices in communities and businesses</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-shop-window text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Waste Hero Education</h5>
+                                                    <p>Provides free activity-based lessons and workshops to teach students about recycling, creating zero waste, and building a circular economy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-flask text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Roseridge Waste Management Educational Resources</h5>
+                                                    <p>Supports environmental education with interactive materials aligned with the Grade 4 Science curriculum, focusing on waste management, recycling, and sustainability</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-5">
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                                    <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                                    <div class="video-container mt-3">
+                                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/DmFGsxLcT6k?si=tz1difDRZeRX0KPe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+
+                                         <iframe src="./quiz/Waste Management.html" frameborder="0" width="480px" height="360px" class="m-auto d-block rounded"></iframe>
+                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 6 - Sustainable Transport -->
+            <div class="tab-pane fade" id="l6">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="lesson-card">
+                                <h2 class="lesson-header">
+                                    <i class="bi bi-tree me-2"></i>Sustainable Transport
+                                </h2>
+                                <p class="lead" data-aos="fade-up" data-aos-delay="50">Explore how greener ways to move can lead us to a cleaner, smarter future.</p>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                                    <h4><i class="bi bi-question-circle feature-icon"></i> What is Sustainable Transport?</h4>
+                                    <p>Sustainable transportation refers to environmentally friendly modes of travel that use fewer natural resources, reduce emissions, and promote healthy living. This includes walking, cycling, using public transport, and driving electric or hybrid vehicles. These alternatives are designed to lessen the environmental impact of transportation.</p>
+                                    <p>Reducing reliance on fossil-fueled cars helps lower greenhouse gas emissions and air pollution, which improves air quality and fights climate change. Sustainable transportation also supports public health by encouraging physical activity and reducing traffic-related accidents. Cities that invest in green transport become more livable and accessible for all residents.</p>
+                                    <p>Building sustainable transportation systems involves more than just cleaner vehicles. It requires smart urban planning—like creating bike paths, pedestrian zones, and efficient public transit networks. Governments, businesses, and individuals must work together to create systems that are safe, inclusive, and sustainable for both current and future generations.</p>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-list-ul feature-icon"></i> Examples of Sustainable Transportation Modes</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-person-walking text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Active Mobility:</b> Walking and cycling are zero-emission modes that also offer health benefits</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-bus-front text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Public Transit:</b> Buses, subways, and trams reduce the number of individual vehicles on the road, lowering emissions per capita</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-lightning-charge text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Electric Vehicles (EVs):</b> Processes that convert non-recyclable waste materials into usable forms of energy, such as electricity or heat. Common methods include direct combustion and other technologies that transform waste into fuel sources</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-share text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Shared Mobility:</b> Carpooling, bike-sharing, and ride-sharing services optimize vehicle usage and reduce traffic congestion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-tree text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>Alternative Fuels:</b> Vehicles powered by biofuels, hydrogen, or solar energy present innovative solutions for sustainable transport</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                                    <h4><i class="bi bi-heart-pulse feature-icon"></i> Importance of Sustainable Transportation</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Environmental Impact:</b> Transportation contributes significantly to global carbon emissions. Sustainable modes help mitigate climate change</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Economic Benefits:</b> Investing in sustainable transport can lead to job creation and long-term cost savings</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Social Equity</b> Accessible and affordable transportation options ensure mobility for all societal segments</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-globe-asia-australia feature-icon"></i> Real-World Examples</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-car-front text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Kochi, India</h5>
+                                                    <p>Set to become the first Indian city with a light tram transport system, enhancing urban connectivity and reducing congestion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-bus-front text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Zurich, Switzerland</h5>
+                                                    <p>Expanding electric tram and trolleybus networks to provide efficient and sustainable urban transport</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-water text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>Synhelion, Switzerland</h5>
+                                                    <p>Developed solar-powered diesel fuel, demonstrating its use in powering a steamboat, marking a step toward decarbonizing shipping and aviation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-5">
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                                    <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                                    <div class="video-container mt-3">
+                                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/b4Wod69FITM?si=EniSOcMzAuF5G8k9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                                    </div>
+                                </div>
+                                
+                              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lesson 7 - Wind Turbine -->
+            <div class="tab-pane fade" id="l7">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="lesson-card">
+                                <h2 class="lesson-header">
+                                    <i class="bi bi-tree me-2"></i>Wind Turbine
+                                </h2>
+                                <p class="lead" data-aos="fade-up" data-aos-delay="50">Learn how clean, renewable energy powers our world while protecting the planet.</p>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                                    <h4><i class="bi bi-question-circle feature-icon"></i> What is a Wind Turbine?</h4>
+                                    <p>A wind turbine is a device that converts the kinetic energy of wind into electrical energy. As the wind blows across the blades of the turbine, it creates lift—similar to how an airplane wing works—which causes the blades to spin. These blades are connected to a rotor, which turns a shaft connected to a generator. As the generator spins, it converts the mechanical energy into electrical energy that can be used to power homes, businesses, and communities.</p>
+                                    <p>Wind turbines play a major role in the shift toward renewable energy because they produce electricity without burning fossil fuels or emitting harmful greenhouse gases. This makes them an environmentally friendly option for generating power. Wind energy is also a sustainable resource—there will always be wind, and it doesn’t get "used up" like coal or oil. In regions with consistent wind patterns, wind farms can produce large amounts of electricity at a relatively low cost.</p>
+                                    <p>There are two main types of wind turbines: onshore and offshore. Onshore turbines are built on land, often in open fields or hilly areas, while offshore turbines are installed in bodies of water where wind speeds are generally higher and more consistent. Technological improvements have made wind turbines more efficient and less noisy, with taller towers and longer blades to capture more wind energy. As a result, wind power continues to grow as a clean, reliable, and vital part of the global energy mix.</p>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-lightbulb feature-icon"></i> Key Concepts of Wind Turbines</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-gear-wide-connected text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>1. How Wind Turbines Work:</b> Wind turbines capture the kinetic energy of moving air and convert it into electricity. The wind turns the turbine’s blades, which spin a shaft connected to a generator that produces electrical power</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-fan text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>2. Types of Wind Turbines:</b> There are two main types:</p>
+                                                    <p>• Horizontal-axis wind turbines (HAWT): These are the most common and usually have three blades that face the wind</p>
+                                                    <p>• Vertical-axis wind turbines (VAWT): These have blades that rotate around a vertical axis and can capture wind from any direction.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-lightning-charge text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>3. Benefits of Wind Energy:</b> Wind energy is a renewable, clean source of electricity. It doesn’t produce air pollution or greenhouse gases and helps reduce our reliance on fossil fuels, making it a key solution in the fight against climate change</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-globe-americas text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <p><b>4. Wind Energy Around the World:</b> Countries like Denmark, Germany, and the United States are leaders in wind power. The technology is rapidly improving, and wind farms—on land and offshore—are becoming a major part of global energy systems</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                                    <h4><i class="bi bi-tools feature-icon"></i> Hands-On Activities You Could Watch and Try</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Build a Mini Wind Turbine:</b> Engage in constructing a simple wind turbine model to understand the mechanics involved</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Blade Design Experiment:</b> Test different blade shapes and angles to see how they affect energy output</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Wind Speed Measurement:</b> Use an anemometer to measure wind speed and analyze its correlation with turbine performance</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="250">
+                                    <h4><i class="bi bi-globe-asia-australia feature-icon"></i> Additional Resources</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-car-front text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>TeachEngineering's Wind Turbine Activity</h5>
+                                                    <p>Offers a detailed guide on building and testing miniature wind turbines, emphasizing engineering principles</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-start mb-3">
+                                                <i class="bi bi-bus-front text-success me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h5>WINDExchange Educational Materials</h5>
+                                                    <p>Provides a range of curricula and teaching materials on wind energy for various educational levels</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-5">
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                                    <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                                    <div class="video-container mt-3">
+                                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/tsZITSeQFR0?si=_PgEYVfmwtNtorEf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lesson 8 - Global Warming -->
+            <div class="tab-pane fade" id="l8">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="lesson-card">
+                                <h2 class="lesson-header">
+                                    <i class="bi bi-tree me-2"></i>Global Warming
+                                </h2>
+                                <p class="lead" data-aos="fade-up" data-aos-delay="50">Learn how clean, renewable energy powers our world while protecting the planet.</p>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                                    <h4><i class="bi bi-question-circle feature-icon"></i> The history and about Global Warming</h4>
+                                    <p>Since the Industrial Revolution, the global annual temperature has increased in total by a little more than 1 degree Celsius, or about 2 degrees Fahrenheit. Between 1850—the year that accurate recordkeeping began—and 1980, it rose on average by 0.07 degrees Celsius (0.13 degrees Fahrenheit) every 10 years. Since 1981, however, the rate of increase has more than doubled: For the last 40 years, we’ve seen the global annual temperature rise by 0.2 degrees Celsius, or 0.36 degrees Fahrenheit, per decade.</p>
+                                    <p>In 2015, the Paris Agreement codified the recommendation of climate scientists to limit global warming to 1.5 degrees Celsius. Working toward that goal continues to give us our best chance to stave off the worst, most devastating effects of climate change: the extreme droughts, wildfires, floods, tropical storms, and other disasters that are so widespread and costly to both our infrastructure and our health.</p>
+                                    <p>Global warming results from the increasing concentration of carbon dioxide (CO2) and other greenhouse gases that trap heat in the earth’s atmosphere. This trapped energy comes from incoming solar radiation absorbed by the earth’s surface and re-radiated back into the atmosphere as infrared energy.</p>
+                                </div>
+                                <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                                    <h4><i class="bi bi-key feature-icon"></i> Key Concepts</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Greenhouse Effect:</b> A natural process where certain gases in Earth's atmosphere trap heat, keeping the planet warm enough to support life. Human activities have intensified this effect, leading to more heat being trapped and a rise in global temperatures</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Economic Benefits:</b></p>
+                                                <p>• Fossil Fuel Combustion: Burning coal, oil, and natural gas for energy and transportation</p>
+                                                <p>• Deforestation: Reducing the number of trees that can absorb CO₂</p>
+                                                <p>• Agriculture: Livestock produce methane; fertilizer use releases nitrous oxide</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="example-card">
+                                                <p><b>Consequences of Global Warming:</b></p>
+                                                <p>• Rising Sea Levels: Melting polar ice and glaciers contribute to sea-level rise, threatening coastal communities</p>
+                                                <p>• Extreme Weather Events: Increased frequency and severity of hurricanes, droughts, and heatwaves</p>
+                                                <p>• Ecosystem Disruption: Altered habitats affect biodiversity and food chains</p>
+                                                <p>• Human Health Risks: Spread of diseases, heat-related illnesses, and food and water scarcity</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-5">
+                                
+                                <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                                    <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                                    <div class="video-container mt-3">
+                                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/0F3QPY83NZQ?si=xrz1KvCORIGBP6A6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pollution -->
+<div class="tab-pane fade" id="l9">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="lesson-card">
+                    <h2 class="lesson-header">
+                        <i class="bi bi-cloud-haze2 me-2"></i>Pollution
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="50">Understanding how pollutants affect our environment and health.</p>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4><i class="bi bi-question-circle feature-icon"></i> About Pollution</h4>
+                        <p>Pollution is the introduction of harmful materials into the environment. These harmful materials are called pollutants. Pollutants can be natural, such as volcanic ash. They can also be created by human activity, such as trash or runoff produced by factories. Pollutants damage the quality of air, water, and land.</p>
+                        <p>Pollution is a global problem. Although urban areas are usually more polluted than the countryside, pollution can spread to remote places where no people live. For example, pesticides and other chemicals have been found in the Antarctic ice sheet. In the middle of the northern Pacific Ocean, a huge collection of microscopic plastic particles forms what is known as the Great Pacific Garbage Patch.</p>
+                        <p>Many things that are useful to people produce pollution. Cars spew pollutants from their exhaust pipes. Burning coal to create electricity pollutes the air. Industries and homes generate garbage and sewage that can pollute the land and water. Pesticides—chemical poisons used to kill weeds and insects—seep into waterways and harm wildlife.</p>
+                    </div>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <h4><i class="bi bi-key feature-icon"></i> Key Concepts</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Types of Pollution:</b> Air pollution (smog, greenhouse gases), water pollution (chemical runoff, plastic waste), land pollution (landfills, toxic waste), noise pollution, and light pollution.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Major Sources:</b></p>
+                                    <p>• Industrial emissions and waste</p>
+                                    <p>• Vehicle exhaust</p>
+                                    <p>• Agricultural runoff</p>
+                                    <p>• Improper waste disposal</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Health Impacts:</b></p>
+                                    <p>• Respiratory diseases from air pollution</p>
+                                    <p>• Waterborne diseases from contaminated water</p>
+                                    <p>• Cancer risks from toxic chemicals</p>
+                                    <p>• Ecosystem collapse affecting food chains</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                        <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                        <div class="video-container mt-3">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/J3Df0-ZJ_WA" title="Pollution explained" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reusable Bottles and Containers -->
+<div class="tab-pane fade" id="l10">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="lesson-card">
+                    <h2 class="lesson-header">
+                        <i class="bi bi-cup-straw me-2"></i>Reusable Bottles and Containers
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="50">Reduce waste and protect the environment with reusable alternatives.</p>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4><i class="bi bi-question-circle feature-icon"></i> About Reusable Bottles and Containers</h4>
+                        <p>A reusable bottle is a bottle that can be reused, as in the case as by the original bottler or by end-use consumers. Reusable bottles have grown in popularity by consumers for both environmental and health safety reasons. Reusable bottles are one example of reusable packaging.</p>
+                        <p>Reusable water bottles can be used over and over again, making them a great alternative to plastic bottles without adding to environmental stressors. By choosing an environmentally friendly water bottle, you can significantly reduce your carbon footprint and be part of the solution.</p>
+                    </div>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <h4><i class="bi bi-key feature-icon"></i> Key Benefits</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                                <div class="example-card">
+                                    <p><b>Environmental Impact:</b></p>
+                                    <p>• Reduces plastic waste in landfills and oceans</p>
+                                    <p>• Lowers carbon footprint from plastic production</p>
+                                    <p>• Decreases energy used in manufacturing disposable bottles</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="example-card">
+                                    <p><b>Personal Benefits:</b></p>
+                                    <p>• Keeps drinks cold/hot longer than disposable bottles</p>
+                                    <p>• Saves money compared to buying bottled water</p>
+                                    <p>• Healthier than plastic which can leach chemicals</p>
+                                    <p>• Convenient to carry and refill anywhere</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                        <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                        <div class="video-container mt-3">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/dsPC_RHFLQE" title="Reusable bottles guide" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sustainable Fashion -->
+<div class="tab-pane fade" id="l11">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="lesson-card">
+                    <h2 class="lesson-header">
+                        <i class="bi bi-bag-heart me-2"></i>Sustainable Fashion
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="50">Learn how clothing choices impact the environment and ethical alternatives.</p>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4><i class="bi bi-question-circle feature-icon"></i> About Sustainable Fashion</h4>
+                        <p>'Sustainable' fashion refers to garments that have been made in a way that is mindful of the many environmental issues the fashion industry touches upon. The purpose of sustainable fashion is to address the significant environmental impact of the clothing industry, which is responsible for about 10% of global carbon emissions and nearly 20% of wastewater.</p>
+                        <p>Sustainability in fashion encompasses a wide range of factors, including cutting CO₂ emissions, addressing overproduction, reducing pollution and waste, supporting biodiversity and ensuring that garment workers are paid a fair wage and have safe working conditions.</p>
+                    </div>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <h4><i class="bi bi-key feature-icon"></i> Key Aspects</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Materials:</b> Organic cotton, hemp, bamboo, recycled fabrics, and other eco-friendly materials that require less water and chemicals to produce.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Production:</b> Ethical manufacturing, reduced water usage, non-toxic dyes, renewable energy in production facilities, and fair labor practices.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Consumption:</b> Buying less, choosing quality over quantity, supporting sustainable brands, and proper clothing care to extend garment life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                        <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                        <div class="video-container mt-3">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/A5DQhbrKoB8" title="Sustainable fashion explained" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Eco-Friendly Cooking -->
+<div class="tab-pane fade" id="l12">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="lesson-card">
+                    <h2 class="lesson-header">
+                        <i class="bi bi-egg-fried me-2"></i>Eco-Friendly Cooking
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="50">Learn how to prepare meals while minimizing environmental impact.</p>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4><i class="bi bi-question-circle feature-icon"></i> About Eco-Friendly Cooking</h4>
+                        <p>Eco-friendly cooking is a range of practices aimed at minimizing the environmental impact of preparing food. This involves making conscious choices from sourcing ingredients – prioritizing local, seasonal, and sustainably produced options – to reducing food waste through careful planning, proper storage, and creative use of leftovers.</p>
+                        <p>It also includes conserving energy by using efficient appliances and cooking methods like steaming or using lids, as well as minimizing water usage and opting for reusable cookware and utensils over single-use items. Ultimately, eco-friendly cooking strives to create delicious and nutritious meals while safeguarding the planet's resources.</p>
+                    </div>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <h4><i class="bi bi-key feature-icon"></i> Key Principles</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Reducing Food Waste:</b> Plan meals carefully, store food properly, use leftovers creatively, and compost food scraps.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Sustainable Sourcing:</b> Choose local, seasonal, organic ingredients and sustainably harvested seafood and meats.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="example-card">
+                                    <p><b>Energy Efficiency:</b> Use proper cookware sizes, lids on pots, batch cooking, and energy-efficient appliances.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                        <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                        <div class="video-container mt-3">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/uCrzk1FZ0yc" title="Eco-friendly cooking" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Water Conservation -->
+<div class="tab-pane fade" id="l13">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="lesson-card">
+                    <h2 class="lesson-header">
+                        <i class="bi bi-droplet me-2"></i>Water Conservation
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="50">Learn how to use water more efficiently and protect this vital resource.</p>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4><i class="bi bi-question-circle feature-icon"></i> About Water Conservation</h4>
+                        <p>Water and energy conservation are closely interconnected practices focused on using these vital resources more efficiently and reducing unnecessary consumption. Water conservation involves minimizing the use of freshwater through various methods like fixing leaks, using water-efficient appliances, and adopting mindful habits in daily activities such as shorter showers and turning off taps.</p>
+                        <p>Because the treatment and distribution of water require significant energy, and energy production often relies on water resources, conserving one directly contributes to saving the other, leading to environmental benefits, reduced costs, and greater resource sustainability.</p>
+                    </div>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <h4><i class="bi bi-keyfeature-icon"></i> Conservation Methods</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                                <div class="example-card">
+                                    <p><b>Indoor Conservation:</b></p>
+                                    <p>• Fix leaky faucets and toilets</p>
+                                    <p>• Install low-flow showerheads</p>
+                                    <p>• Run full loads in dishwashers and washing machines</p>
+                                    <p>• Turn off water while brushing teeth</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="example-card">
+                                    <p><b>Outdoor Conservation:</b></p>
+                                    <p>• Water plants early morning or evening</p>
+                                    <p>• Use drought-resistant plants</p>
+                                    <p>• Install rain barrels</p>
+                                    <p>• Sweep instead of hosing driveways</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                        <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                        <div class="video-container mt-3">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/ctRTo131Ukg" title="Water conservation" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- EV Cars -->
+<div class="tab-pane fade" id="l14">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="lesson-card">
+                    <h2 class="lesson-header">
+                        <i class="bi bi-ev-station me-2"></i>Electric Vehicles
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="50">Discover the future of transportation with electric vehicles.</p>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4><i class="bi bi-question-circle feature-icon"></i> About Electric Vehicles</h4>
+                        <p>Electric vehicles (EVs) are automobiles that are propelled by one or more electric motors, using energy stored in rechargeable batteries. Unlike conventional vehicles that use internal combustion engines burning fossil fuels, EVs produce zero direct emissions, making them more environmentally friendly.</p>
+                        <p>The first electric cars appeared in the late 19th century, but internal combustion engines dominated for most of the 20th century. With growing environmental concerns and technological advancements, EVs have seen a resurgence in the 21st century as a key solution to reduce transportation's environmental impact.</p>
+                    </div>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <h4><i class="bi bi-key feature-icon"></i> Key Benefits</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                                <div class="example-card">
+                                    <p><b>Environmental Advantages:</b></p>
+                                    <p>• Zero tailpipe emissions</p>
+                                    <p>• Reduced greenhouse gas emissions</p>
+                                    <p>• Lower overall carbon footprint</p>
+                                    <p>• Decreased air pollution in cities</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="example-card">
+                                    <p><b>Economic Benefits:</b></p>
+                                    <p>• Lower fuel costs (electricity vs gasoline)</p>
+                                    <p>• Reduced maintenance costs</p>
+                                    <p>• Government incentives and tax credits</p>
+                                    <p>• Energy independence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                        <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                        <div class="video-container mt-3">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/KRrvWIgD8QY" title="Electric vehicles explained" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reducing Plastic -->
+<div class="tab-pane fade" id="l15">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="lesson-card">
+                    <h2 class="lesson-header">
+                        <i class="bi bi-recycle me-2"></i>Reducing Plastic
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="50">Learn how to minimize plastic waste and its environmental impact.</p>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4><i class="bi bi-question-circle feature-icon"></i> About Plastic Pollution</h4>
+                        <p>Plastic pollution has become one of the most pressing environmental issues, with millions of tons of plastic waste entering our oceans each year. This waste harms marine life, pollutes our waterways, and even enters our food chain through microplastics.</p>
+                        <p>Single-use plastics like bags, straws, bottles, and packaging account for a significant portion of this pollution. These items are used briefly but persist in the environment for hundreds of years, breaking down into smaller pieces but never fully disappearing.</p>
+                    </div>
+                    <div class="lesson-card mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <h4><i class="bi bi-key feature-icon"></i> Reduction Strategies</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                                <div class="example-card">
+                                    <p><b>Everyday Swaps:</b></p>
+                                    <p>• Use reusable shopping bags</p>
+                                    <p>• Carry a reusable water bottle</p>
+                                    <p>• Choose glass or metal containers</p>
+                                    <p>• Use beeswax wraps instead of plastic wrap</p>
+                                    <p>• Say no to plastic straws</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="example-card">
+                                    <p><b>Bigger Changes:</b></p>
+                                    <p>• Support plastic-free businesses</p>
+                                    <p>• Choose products with minimal packaging</p>
+                                    <p>• Participate in clean-up efforts</p>
+                                    <p>• Advocate for policy changes</p>
+                                    <p>• Properly recycle when possible</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="350">
+                        <h4><i class="bi bi-play-circle feature-icon"></i> Video Lesson</h4>
+                        <div class="video-container mt-3">
+                           <iframe width="100%" height="500" src="https://www.youtube.com/embed/6RhtiPefVzM?si=LOoom2z4qM9_dqVW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+              <h4 class="text-center my-3">Quiz</h4>
+                              <p class="text-center my-2">Click The Green Flag To Start The Quiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+        </div>
+    </div>
+    
+    </div>
+</div>
+
+  <!-- Footer -->
+    <footer class="position-relative">
+        <img src="./home-images/footer-visuals.gif" alt="Visuals" class="position-absolute footer-visuals" width="90%">
+        <div class="topFooter">
+            <div class="row">
+                <div class="footerCon col-12 col-md-4 my-3">
+                    <div class="d-flex justify-content-md-center">
+                        <div>
+                            <h4>Quick Links</h4>
+                            <br>
+                            <a href="">
+                                Home
+                            </a><br><br>
+                            <details>
+                                <summary>Learn</summary>
+                                <ul>
+                                    <li><a href="">Lesson</a></li>
+                                    <li><a href="">Eco Tips & Tricks</a></li>
+                                    <li><a href="">DIY</a></li>
+                                    <li><a href="">Games</a></li>
+                                </ul>
+                            </details>
+                            <br>
+                            <details>
+                                <summary>Explore</summary>
+                                <ul>
+                                    <li><a href="">Sustainable Products</a></li>
+                                    <li><a href="">Blog & Community</a></li>
+                                </ul>
+                            </details>
+                            <br>
+                            <details>
+                                <summary>About</summary>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerCon col-12 col-md-4 my-3">
+                    <div class="d-flex justify-content-md-center">
+                        <div>
+                            <h4>Follow Us</h4>
+                            <div class="socialCon">
+                                <button class="btn btn-light m-1">Follow <i
+                                        class="bi bi-facebook text-primary"></i></button>
+                                <button class="btn btn-light m-1">Follow <i class="bi bi-tiktok text-dark"></i></button>
+                                <button class="btn btn-light m-1">Subscribe <i
+                                        class="bi bi-youtube text-danger"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footerCon col-12 col-md-4 my-3">
+                    <div class="d-flex justify-content-md-center">
+                        <div>
+                            <h4>Get Latest Updates</h4>
+
+                            <div class="input-group">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                                <span class="input-group-text btn btn-dark"><i class="bi bi-send"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="d-flex align-items-end justify-content-start justify-content-md-center">
+                <img src="./home-images/Future Leaf.svg" alt="future leaf" width="100px" class="mt-3">
+                <h1 class="">Future Leaf</h1>
+            </div>
+            <p class="text-start mt-3 text-md-center">©2025 Future Leaf
+                | Designed & Developed by Moai Bois</p>
+        </div>
+
+    </footer>
+
+    <!-- Account Modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item tab-pane-link"><a href="#signin" class="link-dark nav-link active my-1"
+                                data-bs-toggle="tab">Sign
+                                In</a>
+                        </li>
+                        <li class="nav-item tab-pane-link"><a href="#signup" class="link-dark nav-link my-1"
+                                data-bs-toggle="tab">Sign Up</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="signin">
+                            <h4 class="text-center">Sign In</h4>
+                            <form action="" class="">
+                                <!-- input group-->
+                                <div class="row input-group mb-3 m-auto">
+                                    <div class="input-group mb-3 my-3">
+                                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                        <input class="form-control" type="email" name="emailLoginVal" id="emailLoginVal"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="input-group mb-3 my-3">
+                                        <span class="input-group-text"><i class="bi bi-door-open-fill"></i></span>
+                                        <input class="form-control" type="password" name="passwordLoginVal"
+                                            id="passwordLoginVal" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="progress w-50 m-auto mb-3 d-none" id="signInProgress" role="progressbar"
+                                    aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                        style="width: 100%">Please wait</div>
+                                </div>
+                                <!-- button -->
+                                <div class="d-flex justify-content-between mx-3">
+                                    <button class="btn btn-custom w-50" type="button" id="login">Sign In</button>
+                                    <button type="button" class="btn btn-light w-50 ms-2" id="googleSignIn1">Google <i
+                                            class="bi bi-google"></i></button>
+                                </div>
+                                <!-- link -->
+                                <div class="text-center my-2">
+                                    <a href="#passwordReset" class="text-decoration-none link-success"
+                                        data-bs-toggle="modal">Forgot password?</a>
+                                    <!-- <p>Don't have an account? <a href="#signup" class="text-decoration-none link-success"  data-bs-toggle="tab">Sign
+                                        Up</a></p> -->
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="signup">
+                            <h4 class="text-center">Sign Up</h4>
+                            <form action="" class="">
+                                <!-- input group-->
+                                <div class="row my-4 input-group mb-3 m-auto">
+                                    <!-- <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                        <input list="namelist" class="form-control" type="text" name="text"
+                                            id="text" placeholder="Title" required>
+                                        <datalist id="namelist">
+                                            <option value="Mg"></option>
+                                            <option value="Ma"></option>
+                                            <option value="U"></option>
+                                            <option value="Daw"></option>
+                                            <option value="Dr."></option>
+                                        </datalist>
+                                    </div>
+                                </div> -->
+                                    <!-- <div class="col-md-6"> -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                        <input class="form-control" type="text" name="signUpName" id="signUpName"
+                                            placeholder="Name" required>
+                                    </div>
+                                    <span class="text-danger" id="nameErrorUp"></span>
+                                    <!-- </div> -->
+                                    <div class="input-group mb-3 my-3">
+                                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                        <input class="form-control" type="email" name="signUpEmail" id="signUpEmail"
+                                            placeholder="Email">
+                                    </div>
+                                    <span class="text-danger" id="emailErrorUp"></span>
+                                    <div class="input-group mb-3 my-3">
+                                        <span class="input-group-text"><i class="bi bi-door-open-fill"></i></span>
+                                        <input class="form-control" type="password" name="signUpPassword"
+                                            id="signUpPassword" placeholder="Create Password">
+                                    </div>
+                                    <span class="text-danger" id="passwordErrorUp"></span>
+                                    <div class="input-group mb-3 my-3">
+                                        <span class="input-group-text"><i class="bi bi-door-open-fill"></i></span>
+                                        <input class="form-control" type="password" name="signUpPasswordConfirm"
+                                            id="signUpPasswordConfirm" placeholder="Confirm Password" required>
+                                    </div>
+                                    <span class="text-danger" id="passwordConErrorUp"></span>
+                                    <!-- checkbox-->
+                                    <div class="form-check my-3 ms-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="signUpAgree">
+                                        <label class="form-check-label ms-1" id="agreeErrorUp" for="signUpAgree">
+                                            I agree to the <a href="#" class="text-decoration-none link-success">Terms
+                                                and
+                                                conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="progress w-50 m-auto mb-3 d-none" id="signUpProgress" role="progressbar"
+                                    aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                        style="width: 100%">Please wait</div>
+                                </div>
+                                <!-- button -->
+                                <div class="d-flex justify-content-between mx-3">
+                                    <button class="btn btn-custom w-50" type="button" id="signUpBtn">Sign Up</button>
+                                    <button type="button" class="btn btn-light w-50 ms-2" id="googleSignIn">Google <i
+                                            class="bi bi-google"></i></button>
+                                </div>
+                                <!-- link -->
+                                <div class="text-center my-2">
+                                    <!-- <p>Already have an account? <a href="#signin"
+                                        class="text-decoration-none link-success">Sign in</a></p> -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="userModal" tabindex="-1" aria-labelledby="userModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="userModalLabel">User Detail</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="display-profile-picture m-auto" id="displayPfp"></div>
+                    <h3 class="text-center mt-2" id="displayName"></h3>
+                    <h5 class="text-center mt-2" id="displayEmail"></h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="signOutBtn">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Password Reset Modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="passwordReset" tabindex="-1"
+        aria-labelledby="passwordResetLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="passwordResetLabel">Reset Password</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="text-center">Reset Password</h4>
+                    <div class="input-group mb-3 my-3">
+                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                        <input class="form-control" type="email" name="resetPassEmail" id="resetPassEmail"
+                            placeholder="Email">
+                    </div>
+
+                    <button class="btn btn-custom m-auto d-block" id="resetPassBtn">Reset</button>
+                    <span id="resetPassResult" class="text-center d-block mt-2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./account.js" type="module"></script>
+
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS with faster settings
+        AOS.init({
+            duration: 500,
+            easing: 'ease-out',
+            once: false,
+            offset: 50,
+            delay: 50
+        });
+
+        // Refresh AOS when tab changes
+        document.querySelectorAll('[data-bs-toggle="pill"]').forEach(tab => {
+            tab.addEventListener('shown.bs.tab', function () {
+                AOS.refresh();
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
